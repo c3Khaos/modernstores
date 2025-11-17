@@ -60,6 +60,7 @@ export function Homepage() {
   ]
 
   return (
+    <>
     <div className="min-h-screen bg-background">
       <Header />
       
@@ -181,5 +182,7 @@ export function Homepage() {
         </div>
       </section>
     </div>
+    </>
   )
+
 }

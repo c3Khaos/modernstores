@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ShoppingCart, Search, User, Menu } from "lucide-react"
+import { Link } from "react-router-dom";
 
 export function Header() {
   return (
@@ -13,15 +14,15 @@ export function Header() {
         </div>
 
         {/* Navigation */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="md:flex items-center gap-6">
           <Button variant="ghost">Home</Button>
-          <Button variant="ghost">Shop</Button>
+          <Link to="/products"><Button variant="ghost">Shop</Button></Link>
           <Button variant="ghost">Categories</Button>
           <Button variant="ghost">Deals</Button>
         </nav>
 
         {/* Search Bar */}
-        <div className="hidden md:flex items-center gap-2 flex-1 max-w-md mx-8">
+        <div className=" md:flex items-center gap-2 flex-1 max-w-md mx-8">
           <Search className="h-4 w-4 text-muted-foreground" />
           <Input 
             placeholder="Search products..." 
@@ -40,7 +41,7 @@ export function Header() {
           <Button variant="ghost" size="icon" className="relative">
             <ShoppingCart className="h-4 w-4" />
             <span className="absolute -top-1 -right-1 h-5 w-5 rounded-full bg-primary text-primary-foreground text-xs flex items-center justify-center">
-              3
+              4
             </span>
           </Button>
         </div>
