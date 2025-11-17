@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
 import { ShoppingCart, Search, User, Menu } from "lucide-react"
 import { Link } from "react-router-dom"
 
@@ -31,14 +30,7 @@ export function Header() {
           </Link>
         </nav>
 
-        {/* Search Bar - Hidden on mobile */}
-        <div className="hidden lg:flex items-center gap-2 flex-1 max-w-md mx-8">
-          <Search className="h-4 w-4 text-muted-foreground" />
-          <Input 
-            placeholder="Search products..." 
-            className="flex-1 bg-muted/50 border-0 focus-visible:ring-1"
-          />
-        </div>
+       
 
         {/* User Actions */}
         <div className="flex items-center gap-2">
