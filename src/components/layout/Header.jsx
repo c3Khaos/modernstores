@@ -14,8 +14,7 @@ export function Header() {
           </Link>
         </div>
 
-        {/* Navigation - Hidden on mobile */}
-        <nav className="hidden md:flex items-center gap-2">
+        <nav className=" md:flex items-center gap-2">
           <Link to="/products">
             <Button variant="ghost" className="hover:bg-accent">Shop</Button>
           </Link>
@@ -51,11 +50,6 @@ export function Header() {
             <span className="absolute -top-1 -right-1 h-5 w-5 rounded-full bg-primary text-primary-foreground text-xs flex items-center justify-center font-medium">
               3
             </span>
-          </Button>
-
-          {/* Mobile Menu */}
-          <Button variant="ghost" size="icon" className="md:hidden">
-            <Menu className="h-4 w-4" />
           </Button>
         </div>
       </div>
