@@ -41,7 +41,7 @@ export default function ProductsPage() {
 
             {/* Price */}
             <p className="text-2xl font-bold text-foreground">
-              {product.price}
+              Ksh {product.price}
             </p>
 
             {/* Button */}
